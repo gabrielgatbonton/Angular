@@ -8,5 +8,10 @@ Check the Version:
 
 Creating a Empty Angular Workspace:    
 *ng new (project name) --createApplication=false*  
+Install the Necessary Packages:  
+*npm i*  
+Create the Application:  
+*ng g app (project name)*    
+
 Creating a Default Angular Workspace:  
 *ng new (project name) --createApplication*  
