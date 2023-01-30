@@ -30,16 +30,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  My Angular Journey  
 
 Install Angular on the System using Command Prompt:  
-*npm i @angular/cli -g*  
+`npm i @angular/cli -g`  
 Check the Version:  
-*ng version | ng v*  
+`ng version | ng v`  
 
 Creating a Empty Angular Workspace:    
-*ng new (project name) --createApplication=false*  
+`ng new (project name) --createApplication=false`  
 Install the Necessary Packages:  
-*npm i*  
+`npm i`  
 Create the Application:  
-*ng g app (project name)*    
+`ng g app (project name)`    
 
 Creating a Default Angular Workspace:  
-*ng new (project name) --createApplication*  
+`ng new (project name) --createApplication`  
