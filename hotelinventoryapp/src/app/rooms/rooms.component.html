@@ -1,0 +1,9 @@
+<h1>Welcome to {{hotelName}}</h1>   <!-- Interpolation -->
+
+<!-- Property Binding -->
+<div [hidden]="hideRooms">
+    <h3>Number of Rooms:</h3>
+    <div [innerText]="numberOfRooms"></div>
+</div>
+
+<button (click)="toggle()">Toggle</button>
