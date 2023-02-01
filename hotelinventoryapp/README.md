@@ -42,4 +42,7 @@ Create the Application:
 `ng g app (project name)`    
 
 Creating a Default Angular Workspace:  
-`ng new (project name) --createApplication`  
+`ng new (project name) --createApplication`    
+
+Adding ngx bootstap to Angular Workspace:  
+`ngx add ngx-bootstrap`    
