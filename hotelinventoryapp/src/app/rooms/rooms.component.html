@@ -4,7 +4,11 @@
 <!-- Property Binding -->
 <div [hidden]="hideRooms">
   <h3>Number of Rooms:</h3>
-  <div [innerText]="numberOfRooms"></div>
+  <div 
+  [ngStyle]="{'color': rooms.availableRooms ? 'green' : 'red'}"
+  [innerText]="numberOfRooms">
+
+  </div>
 </div>
 
 {{ rooms.availableRooms || "No rooms available" }}
@@ -22,7 +26,10 @@
       <th>Room Amenities</th>
       <th>Checkin Time</th>
     </tr>
-    <tr *ngFor="let room of roomList; let o = odd; let e = even; let i = index">
+    <tr 
+    [ngClass]="e ? 'even' : 'odd'"
+    *ngFor="let room of roomList; let o = odd; let e = even; let i = index"
+    >
       <td>{{ i+1 }}</td>
       <td>{{ o ? "Odd" : "Even" }}</td>
       <td>{{ room.roomNumber }}</td>
