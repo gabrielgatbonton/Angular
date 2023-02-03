@@ -1,6 +1,6 @@
-<h1>Welcome to {{ hotelName }}</h1>
+<!-- <h1>Welcome to {{ hotelName }}</h1> -->
 <!-- Interpolation -->
-
+<hinv-header></hinv-header>
 <!-- Property Binding -->
 <div [hidden]="hideRooms">
   <h3>Number of Rooms:</h3>
@@ -13,8 +13,18 @@
 {{ rooms.availableRooms || "No rooms available" }}
 
 <!-- {{ roomList | json }} -->
+<div *ngIf=selectedRoom>
+	{{ selectedRoom | json}}
+</div>
+
+<div>
+  <button (click)="addRoom()">Add Room</button>
+</div>
 
 <div *ngIf="rooms.availableRooms > 0">
-	<hinv-rooms-list [rooms]="roomList"(selectedRoom)="selectRoom($event)"></hinv-rooms-list>
+	<hinv-rooms-list 
+  [rooms]="roomList"(selectedRoom)="selectRoom($event)"
+  [title]="title"
+  ></hinv-rooms-list>
 </div>
 <button (click)="toggle()">Toggle</button>
